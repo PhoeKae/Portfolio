@@ -14,7 +14,7 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top mb-5 glass-effect py-3">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand text-dark" href="index.html"><strong>Kaung Zaw Thein</strong></a>
             <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -62,56 +62,21 @@
         <div class="container block" style="padding-top: 150px;">
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
-                    <img src="photo/aboutMe.jpg" class="about-photo" style="height: 350px; width: 310px;">
+                    <img src="photo/aboutMe.jpg" class="about-photo mb-5" style="height: 350px; width: 310px;">
                 </div>
                 <div class="col-lg-8 col-md-6 col-sm-12">
-                    <h1 class="h3 sub-title mx-3">About Me</h1>
-                    <p class="mx-3" style="color: #2A4759;">Hi, my name is Kaung Zaw Thein, dedicated and ambitious
-                        Software Engineer with over
-                        a
-                        year of experience in the tech industry, specializing in developing and delivering full-stack
-                        applications.<br>My main focus these days is learning new technologies and architecting to
+                    <h1 class="h3 sub-title mx-3 mb-3">About Me</h1>
+                    <p class="mx-3" style="color: #2A4759;">Hi, I am looking for an exciting and dynamic role where I
+                        can utilize and experience to make a positive
+                        impact. I am looking for a role that aligns with my values and allows me to contribute to
+                        society in a
+                        meaningful way. It is my belief that everyone has the potential to make a positive impact, and I
+                        am
+                        committed to doing so through my work. I am open to exploring different industries and roles
+                        that align
+                        with my passions and values. <br><br>My main focus these days is learning new technologies and
+                        architecting to
                         growth my career.</p>
-
-                    <!-- <div class="tab-titles mx-3">
-                        <p class="tab-links active-link skills">Skills</p>
-                        <p class="tab-links experience">Projects</p>
-                        <p class="tab-links education">Education</p>
-                    </div> -->
-
-                    <!-- <div class="tab-contents active-tab" id="skills">
-                        <ul class="skills-list">
-                            <div>
-                                <li><span>HTML</span><br></li>
-                                <li><span>CSS</span><br></li>
-                                <li><span>BOOTSTRAP</span><br></li>
-                                <li><span>PHP</span><br></li>
-                                <li><span>LARAVEL</span><br></li>
-                            </div>
-                            <div>
-                                <li><span>JAVASCRIPT</span><br></li>
-                                <li><span>MYSQL</span><br></li>
-                                <li><span>GIT</span><br></li>
-                                <li><span>GITHUB</span><br></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>TodoList project</span><br></li>
-                            <li><span>CRUD project </span><br></li>
-                            <li><span>Blog Project</span><br></li>
-                        </ul>
-                    </div>
-
-                    <div class="tab-contents" id="education">
-                        <ul class="">
-                            <li><span>NiT Institute Java Class</span><br></li>
-                            <li><span>Fairway Technology - Professional Web Developer Class</span><br></li>
-                            <li><span>English Major at Yadanabon University</span><br></li>
-                            <li><span>USN English Language School</span><br></li>
-                        </ul>
-                    </div> -->
                 </div>
             </div>
         </div>
@@ -124,7 +89,7 @@
             <h1 class="sub-title text-center pt-5">What I Do</h1>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="skill-container">
                             <div class="skill-box">
                                 <img src="photo/html-5.png" alt="">
@@ -144,7 +109,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-6 col-sm-12">
                         <div class="skill-container">
                             <div class="skill-box">
                                 <img src="photo/php2.png" alt="">
@@ -179,14 +144,15 @@
                     <li><i class="fa-solid fa-scroll icons"></i>
                         <span class="tab-links">JavaSE | NiT Institute</span>
                         <br><br>
-                        <button class="btn btn-outline-warning btn-sm">View Certificate</button>
+                        <button onclick="viewCertificate()" class="btn btn-outline-warning btn-sm">View
+                            Certificate</button>
                     </li>
 
                     <li><i class="fa-solid fa-chalkboard icons"></i>
                         <span class="tab-links">Professional Web Developer
                             Course | Fairway</span>
                         <br><br>
-                        <button class="btn btn-outline-warning btn-sm">View Certificate</button>
+                        <a class="btn btn-outline-warning btn-sm">View Certificate</a>
                     </li>
 
                     <li><i class="fa-solid fa-building-columns icons"></i>
@@ -205,26 +171,35 @@
 
     <!-- services -->
     <div id="projects">
-        <div class="container service-container block" style="padding-top: 150px;">
+        <div class="container block" style="padding-top: 150px;">
             <h1 class="sub-title">Projects</h1>
             <div class="service-list">
                 <div>
                     <i class="fa-solid fa-list-check text-success"></i>
                     <h2 class="service-title">CRUD Project | PHP</h2>
-                    <p>Solving business problems and write clean and maintainable code. Working closely with
-                        clients.</p>
+                    <p>This project is a basic CRUD (Create, Read, Update, Delete) application designed to manage data
+                        efficiently. It allows users to create new records, view existing data, update entries, and
+                        delete them as needed.</p><br><br>
+                    <a href="https://github.com/PhoeKae/CRUD-Project-PHP" class="btn btn-primary" target="_blank">View
+                        More</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-address-card text-secondary"></i>
                     <h2 class="service-title">Portfolio Project</h2>
-                    <p>Solving business problems and write clean and maintainable code. Working closely with
-                        clients.</p>
+                    <p>This portfolio showcases the websites I built using HTML, CSS, JavaScript, and Bootstrap. My
+                        projects focus on creating clean, responsive, and user-friendly designs. This portfolio reflects
+                        my learning and growth in frontend web development.</p><br>
+                    <a href="https://github.com/PhoeKae/Portfolio" class="btn btn-primary" target="_blank">View More</a>
                 </div>
                 <div>
                     <i class="fa-brands fa-laravel text-danger"></i>
                     <h2 class="service-title">Blog Project | Laravel</h2>
-                    <p>Solving business problems and write clean and maintainable code. Working closely with
-                        clients.</p>
+                    <p>I used Laravel's MVC structure to organize the code and Eloquent ORM to manage the database. The
+                        blog has a clean, responsive design and is easy to use. This project helped me improve my
+                        backend development skills and understand how to build a full-featured web application with
+                        Laravel.
+                    </p>
+                    <a href="https://github.com/PhoeKae/Blog" class="btn btn-primary" target="_blank">View More</a>
                 </div>
             </div>
         </div>
@@ -239,12 +214,11 @@
                     Touch</span><br>I'm currently looking for a remote job or any new opportunities. <br>Whether you
                 have a project to discuss or just want to say hi, my inbox is open for<br>all!</p>
             <div class="btndiv text-center mt-2">
-                <a href="photo/Kaung_Zaw_Thein_-_IT_Cv Form.jpg" download class="btn btn-outline-primary">Download
+                <a href="photo/Kaung Zaw Thein.pdf" download class="btn btn-outline-primary">Download
                     Cv</a>
             </div>
         </div>
     </div>
-
     <!-- My Contact End -->
 
     <!-- Footer -->
